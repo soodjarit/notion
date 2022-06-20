@@ -1,0 +1,5 @@
+if(prop("Task type") == "Live", format(prop("Deadline")), "-")
+dateBetween(now(), prop("Deadline"), "days")
+format(dateBetween(now(), prop("Deadline"), "days"))
+format(dateBetween(now(), prop("Deadline"), "days")) + " days to go"
+format(dateBetween(prop("Deadline"),now(), "days"))
